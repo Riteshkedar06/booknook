@@ -1,0 +1,33 @@
+.bookdetail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.bookdetail__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bookdetail__bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bookdetail__topLeft {
+    width: 30%;
+}
+
+.bookdetail__topLeft>img {
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.bookdetail__topRight {
+    width: 70%;
+}
