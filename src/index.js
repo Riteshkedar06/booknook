@@ -5,14 +5,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store'
+import { ChakraProvider } from '@chakra-ui/react'
+import ChatProvider from './Context/ChatProvider';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Provider>
+  <BrowserRouter>
+    <ChatProvider>
+      <Provider store={store}>
+        <React.StrictMode>
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
+        </React.StrictMode>
+      </Provider>
+    </ChatProvider>
+  </BrowserRouter>
+
 
 );
 

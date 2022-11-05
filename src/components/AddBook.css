@@ -25,9 +25,16 @@
     /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
 }
 
+.addbook__title {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
 .addbook>img {
     width: 100%;
-    height: 120vh;
+    height: 200vh;
     position: relative;
 
 }

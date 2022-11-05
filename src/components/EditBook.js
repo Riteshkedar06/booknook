@@ -28,6 +28,7 @@ const defaultBook = {
     imgUrl: '',
     purchasedOn: '',
     usedBy: '',
+    contact: '',
     condition: ''
 }
 function EditBook() {
@@ -86,6 +87,10 @@ function EditBook() {
                     <FormControl>
                         <InputLabel>User By:</InputLabel>
                         <Input onChange={(e) => onValueChange(e)} name="usedBy" value={book.usedBy} />
+                    </FormControl>
+                    <FormControl>
+                        <InputLabel>Contact No : </InputLabel>
+                        <Input onChange={(e) => onValueChange(e)} name="contact" value={book.contact} />
                     </FormControl>
                     <FormControl>
                         <Label>Condition</Label>

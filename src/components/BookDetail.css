@@ -3,12 +3,16 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    background: rgb(255, 253, 252);
+
 }
 
 .bookdetail__top {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .bookdetail__bottom {
@@ -30,4 +34,87 @@
 
 .bookdetail__topRight {
     width: 70%;
+    align-items: center;
+}
+
+.bookdetail__title {
+    align-items: top;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #000
+}
+
+.bookdetail__des {
+    align-items: top;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: gray
+}
+
+.bookdetail__info {
+    align-items: left;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: #000
+}
+
+.hr {
+    color: black;
+    width: 100%;
+    border: 1px solid;
+    border-top: none;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #000;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 10px 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+}
+
+.button:active {
+    background-color: #111;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
 }

@@ -13,7 +13,7 @@ const chatModel = new mongoose.Schema(
         users: [
             {
                 type: mongoose.Schema.Types.ObjectId,
-                ref: "User"
+                ref: "user"
             }
         ],
         latestMessage: {
@@ -22,7 +22,7 @@ const chatModel = new mongoose.Schema(
         },
         groupAdmin: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "User"
+            ref: "user"
         },
     },
     {

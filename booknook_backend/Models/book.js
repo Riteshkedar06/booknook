@@ -9,7 +9,13 @@ const BookSchema = new mongoose.Schema({
     description: String,
     purchasedOn: String,
     usedBy: Number,
-    condition: Number
+    condition: Number,
+    contact: Number,
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user"
+    },
+
 });
 
 

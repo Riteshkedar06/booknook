@@ -45,6 +45,7 @@ export const deleteBook = async (id) => {
 
 //User
 export const authenticateSignUp = async (data) => {
+    console.log("calling")
     try {
         console.log(data);
         return await axios.post(`${URL}/signup`, data);
@@ -55,7 +56,6 @@ export const authenticateSignUp = async (data) => {
 }
 export const authenticateLogin = async (data) => {
     try {
-        console.log(data);
         return await axios.post(`${URL}/login`, data);
     } catch (error) {
         console.log("Error while login", error)
@@ -84,3 +84,11 @@ export const deleteReqestedBook = async (id) => {
         console.log("Error ehile calling deleteing", error)
     }
 }
+
+// export const addBook = async (data) => {
+//     try {
+//         return await axios.post(`${URL}/add`, data);
+//     } catch (error) {
+//         console.log("Error while adding book", error)
+//     }
+// }

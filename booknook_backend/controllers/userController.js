@@ -2,6 +2,7 @@ const User = require('../Models/user');
 const asyncHandler = require('express-async-handler');
 const generateToken = require('../config/generateToken');
 
+
 module.exports.signUpUser = asyncHandler(async (req, res) => {
     const { name, email, password, pic } = req.body;
 
@@ -41,10 +42,8 @@ module.exports.signUpUser = asyncHandler(async (req, res) => {
 
 module.exports.loginUser = asyncHandler(async (req, res) => {
     const { email, password } = req.body;
-    console.log(password);
 
     const user = await User.findOne({ email });
-    console.log(user);
 
     if (user && (await user.matchPassword(password))) {
         res.json({
@@ -59,4 +58,18 @@ module.exports.loginUser = asyncHandler(async (req, res) => {
         res.status(401);
         throw new Error("Invalid Email or Password");
     }
+});
+module.exports.allUsers = asyncHandler(async (req, res) => {
+    const keyword = req.query.search
+        ? {
+            $or: [
+                { name: { $regex: req.query.search, $options: "i" } },
+                { email: { $regex: req.query.search, $options: "i" } },
+            ],
+        }
+        : {};
+
+    // const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
+    const users = await User.find(keyword);
+    res.send(users);
 });
