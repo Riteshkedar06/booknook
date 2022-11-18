@@ -10,7 +10,7 @@
     left: 25%;
     top: 10%;
     background: rgb(0, 0, 0, 0);
-    color: rgb(250, 235, 215);
+    color: #000;
     padding: 5px;
     font-size: 16px;
     align-items: center;
@@ -18,7 +18,7 @@
     height: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 100px;
     z-index: 100;
 

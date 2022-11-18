@@ -14,7 +14,6 @@ function GetRequestedBook() {
     const getBook = async () => {
         let res = await getRequestedBook();
         setBooks(res.data);
-
     }
     const deleteBook = async (id) => {
         await deleteReqestedBook(id)

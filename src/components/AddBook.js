@@ -69,7 +69,7 @@ function AddBook() {
                         <Form.Control className='addbook__formInput' type='text' placeholder="Enter a purchased date" onChange={(e) => onValueChange(e)} name="purchasedOn" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>User By:</Form.Label>
+                        <Form.Label>Used By:</Form.Label>
                         <Form.Control className='addbook__formInput' type='text' placeholder="" onChange={(e) => onValueChange(e)} name="usedBy" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -81,11 +81,11 @@ function AddBook() {
                         <FormLabel >Condition</FormLabel>
                         <FormSelect className='addbook__formInput' name="condition" onChange={(e) => onValueChange(e)} defaultValue={2} >
                             <option>Condition</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Three</option>
-                            <option value="5">Three</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </FormSelect>
                     </Form.Group>
                     <Form.Group >
@@ -102,7 +102,7 @@ function AddBook() {
                     </Form.Group> */}
                 </Form>
             </div>
-            <img src="https://images.unsplash.com/photo-1528459105426-b9548367069b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym9vayUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+            {/* <img src="https://images.unsplash.com/photo-1528459105426-b9548367069b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym9vayUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" /> */}
 
         </div >
     );

@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 function BookCard(props) {
-    console.log(props)
     return (
         <Card style={{ width: '20rem' }}>
             <Card.Img variant="top" src={props.imgUrl} />
