@@ -25,7 +25,7 @@ dotenv.config(); app.use(cors());
 //Database connection
 const user = process.env.DB_USERNAME;
 const password = process.env.DB_password;
-const dbUrl = `mongodb://${user}:${password}@ac-resmg7g-shard-00-00.3cwwsjs.mongodb.net:27017,ac-resmg7g-shard-00-01.3cwwsjs.mongodb.net:27017,ac-resmg7g-shard-00-02.3cwwsjs.mongodb.net:27017/BOOKNOOK?ssl=true&replicaSet=atlas-yzg433-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const dbUrl = `MongoDB linK`;
 mongoose.connect(dbUrl);
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connections error:"));
